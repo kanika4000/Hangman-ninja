@@ -1,0 +1,41 @@
+
+import random
+
+def hangman():
+    words = ['tiger', 'tree', 'underground', 'giraffe', 'chair']
+    word = random.choice(words)
+    guesses = []
+    turns = 6
+
+    while turns > 0:
+        print("\n")
+        for char in word:
+            if char in guesses:
+                print(char, end=' ')
+            else:
+                print('_', end=' ')
+
+        if set(word) == set(guesses):
+            print("\nCongratulations! You guessed the word!")
+            break
+
+        guess = input("\nGuess a letter: ").lower()
+
+        if guess in guesses:
+            print("You've already guessed that letter. Try again!")
+
+        elif len(guess) > 1 or not guess.isalpha():
+            print("Invalid input. Please enter a single letter.")
+
+        elif guess not in word:
+            turns -= 1
+            print("Wrong guess! You have", turns, "more turns.")
+
+            if turns == 0:
+                print("Oops! You ran out of turns. The word was", word)
+                break
+
+        else:
+            guesses.append(guess)
+
+hangman()
