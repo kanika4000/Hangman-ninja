@@ -1,0 +1,9 @@
+import random
+words = ["tiger", "tree", "underground", "giraffe", "chair"]
+def select_word(words):
+    return random.choice(words)
+
+# Test the function
+print(select_word(words))  # Example output: "tree"
+remaining_attempts = 6
+guessed_letters = ""
