@@ -1,8 +1,9 @@
 TEAM-"THREE NINJAS"<br>
 MEMBERS-<br>
-KIRTI(2310990717)-MANAGER<br>
+KANIKA(2310990706)-MANAGER<br>
+KIRTI(2310990717)-DEVELOPER<br>
 MEHAK(2310990737)-TESTER<br>
-KANIKA(2310990706)-DEVELOPER<br>
+
 
 Hangman is a word guessing game that can be played by two or more players. Here’s how it works:<br>
 
