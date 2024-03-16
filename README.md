@@ -5,7 +5,7 @@ MEHAK(2310990737)-TESTER<br>
 KANIKA(2310990706)-DEVELOPER<br>
 
 Hangman is a word guessing game that can be played by two or more players. Here’s how it works:<br>
-.
+
 Objective: One player thinks of a word, phrase, or sentence, and the other player(s) try to guess it by suggesting letters or numbers within a certain number of guesses.<br>
 Gameplay:<br>
 The word to be guessed is represented by a row of dashes (one dash for each letter).<br>
