@@ -1,9 +1,11 @@
-THREE -NINJAS-<br><b>
+<b>THREE -NINJAS </b><br>
 
-This is a team project based on a guessing game where one player guess the letters and the system automatically shows the letters is correct or not.the word is represented by a row of dashes, with each dash representing a letter. 
-KANIKA(2310990706)-MANAGER<br>
-KIRTI VASHISHAT(2310990717)-DEVELOPER<br>
-MEHAK GARG(2310990737)-TESTER<br>
+This is a team project based on a guessing game where one player guess the letters and the system automatically shows the letters is correct or not.The word is represented by a row of dashes, with each dash representing a letter.<br><br>
+<b><u>TEAM MEMBERS-</b></u><br>
+   <b>.Kanika--Manager
+   
+
+
 
 
 Hangman is a word guessing game that can be played by two or more players. Here’s how it works:<br>
