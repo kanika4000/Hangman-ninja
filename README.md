@@ -5,8 +5,8 @@
    2.Kirti Vashishat--Developer<br>
    3.Mehak Garg--Tester<br><br>
    
-   The Hangman game is a classic word -guessing game that challenges that can be played by two or more players.The game typically involves a player attempting to  
-   guess a letter chosen by another player.The word to be guessed is represented by a row of dashes, each dash representing a letter. The game ends when the 
+   The Hangman game is a classic word -guessing game that challenges that can be played by two or more players.The game typically involves a player attempting 
+    to guess a letter chosen by another player.The word to be guessed is represented by a row of dashes, each dash representing a letter. The game ends when the 
    guessing player(s) either guess the letter correctly or the complete hangman figure is drawn.If the hangman figure is completed before the word is guessed, the 
    guessing player(s) lose the game.It's a fun and engaging  game that challenges players' vocabulary, deduction, and spelling skills.<br><br>
 
