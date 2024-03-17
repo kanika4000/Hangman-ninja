@@ -1,5 +1,6 @@
-TEAM-"THREE NINJAS"<br>
-MEMBERS-<br>
+THREE -NINJAS-<br><b>
+
+This is a team project based on a guessing game where one player guess the letters and the system automatically shows the letters is correct or not.the word is represented by a row of dashes, with each dash representing a letter. 
 KANIKA(2310990706)-MANAGER<br>
 KIRTI VASHISHAT(2310990717)-DEVELOPER<br>
 MEHAK GARG(2310990737)-TESTER<br>
