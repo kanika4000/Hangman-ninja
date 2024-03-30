@@ -1,41 +1,106 @@
-
 import random
 
-def hangman():
-    words = ['tiger', 'tree', 'underground', 'giraffe', 'chair']
-    word = random.choice(words)
-    guesses = []
-    turns = 6
+print("Welcome to hangman")
+print("-------------------------------------------")
 
-    while turns > 0:
-        print("\n")
-        for char in word:
-            if char in guesses:
-                print(char, end=' ')
-            else:
-                print('_', end=' ')
+wordDictionary = ["sunflower", "house", "diamond", "memes","yeet","hello", "howdy", "like", "subscribe"]
 
-        if set(word) == set(guesses):
-            print("\nCongratulations! You guessed the word!")
-            break
+### Choose a random word
+randomWord = random.choice(wordDictionary)
 
-        guess = input("\nGuess a letter: ").lower()
+for x in randomWord:
+  print("_", end=" ")
 
-        if guess in guesses:
-            print("You've already guessed that letter. Try again!")
+def print_hangman(wrong):
+  if(wrong == 0):
+    print("\n+---+")
+    print("    |")
+    print("    |")
+    print("    |")
+    print("   ===")
+  elif(wrong == 1): 
+    print("\n+---+")
+    print("O   |")
+    print("    |")
+    print("    |")
+    print("   ===")
+  elif(wrong == 2):
+    print("\n+---+")
+    print("O   |")
+    print("|   |")
+    print("    |")
+    print("   ===")
+  elif(wrong == 3):
+    print("\n+---+")
+    print(" O  |")
+    print("/|  |")
+    print("    |")
+    print("   ===")
+  elif(wrong == 4):
+    print("\n+---+")
+    print(" O  |")
+    print("/|\ |")
+    print("    |")
+    print("   ===")
+  elif(wrong == 5):
+    print("\n+---+")
+    print(" O  |")
+    print("/|\ |")
+    print("/   |")
+    print("   ===")
+  elif(wrong == 6):
+    print("\n+---+")
+    print(" O   |")
+    print("/|\  |")
+    print("/ \  |")
+    print("    ===")
 
-        elif len(guess) > 1 or not guess.isalpha():
-            print("Invalid input. Please enter a single letter.")
+def printWord(guessedLetters):
+  counter=0
+  rightLetters=0
+  for char in randomWord:
+    if(char in guessedLetters):
+      print(randomWord[counter], end=" ")
+      rightLetters+=1
+    else:
+      print(" ", end=" ")
+    counter+=1
+  return rightLetters
 
-        elif guess not in word:
-            turns -= 1
-            print("Wrong guess! You have", turns, "more turns.")
+def printLines():
+  print("\r")
+  for char in randomWord:
+    print("\u203E", end=" ")
 
-            if turns == 0:
-                print("Oops! You ran out of turns. The word was", word)
-                break
+length_of_word_to_guess = len(randomWord)
+amount_of_times_wrong = 0
+current_guess_index = 0
+current_letters_guessed = []
+current_letters_right = 0
 
-        else:
-            guesses.append(guess)
+while(amount_of_times_wrong != 6 and current_letters_right != length_of_word_to_guess):
+  print("\nLetters guessed so far: ")
+  for letter in current_letters_guessed:
+    print(letter, end=" ")
+  ### Prompt user for input
+  letterGuessed = input("\nGuess a letter: ")
+  ### User is right
+  if(randomWord[current_guess_index] == letterGuessed):
+    print_hangman(amount_of_times_wrong)
+    ### Print word
+    current_guess_index+=1
+    current_letters_guessed.append(letterGuessed)
+    current_letters_right = printWord(current_letters_guessed)
+    printLines()
+  ### User was wrong af
+  else:
+    amount_of_times_wrong+=1
+    current_letters_guessed.append(letterGuessed)
+    ### Update the drawing
+    print_hangman(amount_of_times_wrong)
+    ### Print word
+    current_letters_right = printWord(current_letters_guessed)
+    printLines()
 
-hangman()
+print("Game is over! Thank you for playing :)")
+
