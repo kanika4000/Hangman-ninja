@@ -1,9 +1,61 @@
+import tkinter as tk
+from tkinter import messagebox
 import random
-words = ["tiger", "tree", "underground", "giraffe", "chair"]
-def select_word(words):
-    return random.choice(words)
 
-# Test the function
-print(select_word(words))  # Example output: "tree"
-remaining_attempts = 6
-guessed_letters = ""
+# List of words for the game
+words = ['python', 'hangman', 'developer', 'computer', 'keyboard', 'mouse', 'screen']
+
+# Function to start a new game
+def new_game():
+    global chosen_word, guessed_word, attempts_left
+    chosen_word = random.choice(words)
+    guessed_word = ['_'] * len(chosen_word)
+    attempts_left = 6
+    update_display()
+
+# Function to check if the guessed letter is in the word
+def check_letter(letter):
+    global attempts_left
+    if letter in chosen_word:
+        for i in range(len(chosen_word)):
+            if chosen_word[i] == letter:
+                guessed_word[i] = letter
+    else:
+        attempts_left -= 1
+    update_display()
+    check_win_loss()
+
+# Function to update the display
+def update_display():
+    word_label.config(text=' '.join(guessed_word))
+    attempts_label.config(text=f'Attempts left: {attempts_left}')
+
+# Function to check if the player has won or lost
+def check_win_loss():
+    if '_' not in guessed_word:
+        messagebox.showinfo('Hangman', 'Congratulations! You won!')
+        new_game()
+    elif attempts_left == 0:
+        messagebox.showinfo('Hangman', f'You lost! The word was: {chosen_word}')
+        new_game()
+
+# Create the main window
+root = tk.Tk()
+root.title('Hangman Game')
+
+# Create labels for the word and attempts left
+word_label = tk.Label(root, text='', font=('Helvetica', 24))
+word_label.pack()
+
+attempts_label = tk.Label(root, text='', font=('Helvetica', 12))
+attempts_label.pack()
+
+# Create buttons for each letter
+for letter in 'abcdefghijklmnopqrstuvwxyz':
+    tk.Button(root, text=letter, width=5, height=2, command=lambda l=letter: check_letter(l)).pack(side=tk.LEFT)
+
+# Start a new game
+new_game()
+
+# Run the main loop
+root.mainloop()
