@@ -3,14 +3,14 @@ from tkinter import messagebox
 import random
 
 # List of words for the game
-words = ['python', 'hangman', 'developer', 'computer', 'keyboard', 'mouse', 'screen']
+words = ["python","java","javascript","ruby","data","science","hangman","youtube"]
 
 # Function to start a new game
 def new_game():
     global chosen_word, guessed_word, attempts_left
     chosen_word = random.choice(words)
     guessed_word = ['_'] * len(chosen_word)
-    attempts_left = 6
+    attempts_left = 8
     update_display()
 
 # Function to check if the guessed letter is in the word
