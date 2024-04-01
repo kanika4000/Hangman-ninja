@@ -48,9 +48,7 @@
            3.Word Definitions:<br>
               Display the definition of the secret word after the game ends.<br>
               This feature can be educational and help players learn new words.<br>
-           4.Add a timer:<br>
-              Introduce a timer to limit the time for each guess,making the game more exciting and enjoyable.<br>
-              
+         
           Version1:In this version1,the player does not got the feedback when user the player guess wrong word also there is no user interaction.
              Also,you could add a simple graphical representation of the hangman game.For Example:Different parts of the hangman game for each incorrect
              guess.You can also implement a scoring system by keeping track of the user's guessing time.So, the game played by the user is more interesting.
