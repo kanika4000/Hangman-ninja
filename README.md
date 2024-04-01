@@ -61,7 +61,7 @@
              behavior or errors.The game interaction is primarily text-based, lacking visual clues or interactive elements that could enhance player engagement 
              and enjoyment.Introduce levels of difficulty, word categories, or additional features to offer a more dynamic and challenging gaming experience.
              This suggestions made the game more interesting and fully enjoyable for the players.<br>
-         Version3:In this version3<b>"The version3 is much more better than version2"</B> The user Utilizes tkinter to create a user-friendly GUI for the 
+         Version3:In this version3<b>"The version3 is much more better than version2"</b> The user Utilizes tkinter to create a user-friendly GUI for the 
              Hangman game, enhancing the player's interactive experience.Randomly selects a word from a predefined list for players to guess, adding variability to 
              each game session.Allows players to input a letter guess through an entry widget and check it against the chosen word. It also provides feedback on 
              correct and incorrect guesses by updating the displayed word with correctly guessed letters and reducing the remaining lives accordingly.Displays the 
