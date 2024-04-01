@@ -51,17 +51,17 @@
            4.Add a timer:<br>
               Introduce a timer to limit the time for each guess,making the game more exciting and enjoyable.<br>
               
-          <b>Version1:</b>In this version1,the player does not got the feedback when user the player guess wrong word also there is no user interaction.
+          Version1:In this version1,the player does not got the feedback when user the player guess wrong word also there is no user interaction.
              Also,you could add a simple graphical representation of the hangman game.For Example:Different parts of the hangman game for each incorrect
              guess.You can also implement a scoring system by keeping track of the user's guessing time.So, the game played by the user is more interesting.
              You can also add some GUI Enhancement.This addition makes the game more competitive element.So,the player enjoy the hangaman game.<br>
-         <b>Version2:</b>In this version2,the Players may not receive specific feedback on which letters they guessed incorrectly, making it challenging to  
+         Version2:In this version2,the Players may not receive specific feedback on which letters they guessed incorrectly, making it challenging to  
              track their progress and make informed guesses.The game lacks clear instructions or prompts for players, potentially causing confusion about the 
              gameplay rules and objectives.There is no input validation to ensure that players enter only single letters as guesses, which can lead to unexpected 
              behavior or errors.The game interaction is primarily text-based, lacking visual clues or interactive elements that could enhance player engagement 
              and enjoyment.Introduce levels of difficulty, word categories, or additional features to offer a more dynamic and challenging gaming experience.
              This suggestions made the game more interesting and fully enjoyable for the players.<br>
-         <b>Version3:</b>In this version3<b>"The version3 is much more better than version2"</B> The user Utilizes tkinter to create a user-friendly GUI for the 
+         Version3:In this version3<b>"The version3 is much more better than version2"</B> The user Utilizes tkinter to create a user-friendly GUI for the 
              Hangman game, enhancing the player's interactive experience.Randomly selects a word from a predefined list for players to guess, adding variability to 
              each game session.Allows players to input a letter guess through an entry widget and check it against the chosen word. It also provides feedback on 
              correct and incorrect guesses by updating the displayed word with correctly guessed letters and reducing the remaining lives accordingly.Displays the 
