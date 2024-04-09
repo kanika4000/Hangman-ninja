@@ -1,8 +1,8 @@
    # THREE -NINJAS<br>
    # TEAM MEMBERS:<br>
-     1.Kanika:-Manager<br>
-     2.Kirti Vashishat:-Developer<br>
-     3.Mehak Garg:-Tester<br><br>
+       1.Kanika:-Manager <br>
+       2.Kirti Vashishat:-Developer <br>
+       3.Mehak Garg:-Tester <br><br>
   " The Hangman game is a classic word -guessing game that challenges that can be played by two or more players.The game typically involves a player attempting 
     to guess a letter chosen by another player.The word to be guessed is represented by a row of dashes, each dash representing a letter. The game ends when the 
     guessing player(s) either guess the letter correctly or the complete hangman figure is drawn.If the hangman figure is completed before the word is guessed, the 
@@ -45,6 +45,9 @@
              3.Word Definitions:<br>
                    Display the definition of the secret word after the game ends.<br>
                    This feature can be educational and help players learn new words.<br>
+             4.Adding a timer:
+                   Once the timer function has been created,it can be added to the hangman game.This can be done by calling the timer function at the start
+                   of the game an checking its value at each iteration of game.<br>     
    # Version1:<br>   
              In this version1,the player does not got the feedback when user the player guess wrong word also there is no user interaction.
              Also,you could add a simple graphical representation of the hangman game.For Example:Different parts of the hangman game for each incorrect
